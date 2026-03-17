@@ -157,23 +157,23 @@ td {
    4- HERO SECTION
 ========================= */
 
-#home-sec {
+#home {
   min-height: 100vh;
   padding-top: 80px;
   padding-bottom: 40px;
 }
 
-#home-sec .img-wrapper {
+#home .img-wrapper {
   width: 45%;
   float: left;
 }
 
-#home-sec .content-wrapper {
+#home .content-wrapper {
   width: 45%;
   float: right;
 }
 
-#home-sec .container::after {
+#home .container::after {
   content: "";
   display: block;
   clear: both;
@@ -437,21 +437,21 @@ td {
    7- CUSTOMER REVIEWS SECTION
 ========================= */
 
-#customer-reviews {
+#reviews {
   padding: 40px 0;
   background: #ffffff;
   position: relative;
   overflow: visible;
 }
 
-#customer-reviews .container {
+#reviews .container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 5%;
 }
 
-#customer-reviews::after {
+#reviews::after {
   content: "";
   display: block;
   clear: both;
@@ -724,7 +724,7 @@ td {
    8- RELATED PRODUCTS
 ========================= */
 
-#related-products {
+#products {
   padding: 40px 0;
   background: #f6f6fb;
   text-align: center;
