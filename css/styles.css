@@ -748,25 +748,17 @@ td {
 /* --- Card Image --- */
 
 .product-card .img-box {
+  position: relative; /* عشان الـ badge يتحط صح جواه */
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 15px;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card img {
-  border-radius: 15px;
-}
-
 /* --- Card Hover --- */
 
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.product-card .img-box:hover {
-  transform: scale(1.03);
+.product-card:hover .img-box {
+  transform: scale(1.08);
 }
 
 /* --- Card Badge --- */
@@ -775,6 +767,7 @@ td {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 10; /* ← ضيف دي عشان يبقى فوق الصورة دايما */
   background: #7c5cff;
   color: white;
   padding: 5px 10px;
