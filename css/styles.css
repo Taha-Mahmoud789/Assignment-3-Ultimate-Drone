@@ -774,7 +774,7 @@ td {
 /* --- Card Hover --- */
 
 .product-card:hover .img-box {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* --- Card Badge --- */
