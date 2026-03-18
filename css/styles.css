@@ -62,6 +62,22 @@ td {
   color: #666;
 }
 
+/* This class is reusable  for  two sections < HERO SECTION , COMPARE SECTION> */
+/* --- Badge --- */
+.badge {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7c5cff, #9f6cff);
+  color: white;
+}
+.badge img {
+  width: 18px;
+}
 /* =========================
    3- NAVBAR SECTION
 ========================= */
@@ -208,16 +224,6 @@ td {
   font-size: 14px;
 }
 
-/* --- Badge --- */
-
-.badge {
-  padding: 6px 14px;
-  border-radius: 20px;
-  background: linear-gradient(90deg, #7c5cff, #9f6cff);
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
-}
 /* --- Price --- */
 
 .new-price {
@@ -313,7 +319,6 @@ td {
   padding: 18px;
   font-size: 16px;
 }
-
 .compare-table thead tr,
 .compare-table tbody tr {
   position: relative;
@@ -341,7 +346,6 @@ td {
 .compare-table thead th:nth-child(2) {
   border-radius: 20px 20px 0 0;
 }
-
 /* last-child pseudo-class matches any element that is the last child of its parent. */
 .compare-table tbody tr:last-child td:nth-child(2) {
   border-radius: 0 0 20px 20px;
@@ -350,7 +354,9 @@ td {
 .compare-table tbody tr:last-child td {
   border-bottom: none;
 }
-
+.compare-table thead th span {
+  color: gray;
+}
 .compare-table tbody tr:last-child::after {
   display: none;
   color: black;
@@ -363,30 +369,39 @@ td {
   align-items: center;
   gap: 10px;
 }
-
-.feature img {
-  width: 25px;
-}
-
-/* --- Product Label --- */
-
-.Product {
+#compare .our-product {
   font-size: 14px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7c5cff, #9f6cff);
+  color: white;
 }
-
-.Product img {
+.feature img {
   width: 18px;
 }
 
-/* --- Misc --- */
+/* --- Product Label --- */
 
-.danger {
+/* --- Misc --- */
+.text-danger {
   color: #e55c00;
+}
+.danger-badge {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #f54900;
+}
+.danger-badge img {
+  width: 18px;
 }
 
 .rating img {
