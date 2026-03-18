@@ -326,14 +326,15 @@ td {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background: #c2c2c2;
+  background-color: #c2c2c2;
 }
 
 /* --- Highlight Column (Our Product) --- */
 
+/* --- nth-child(2) Pseudo-class --- */
 .compare-table th:nth-child(2),
 .compare-table td:nth-child(2) {
-  background: #f1ecff;
+  background-color: #f1ecff;
   color: #7c5cff;
 }
 
@@ -341,6 +342,7 @@ td {
   border-radius: 20px 20px 0 0;
 }
 
+/* last-child pseudo-class matches any element that is the last child of its parent. */
 .compare-table tbody tr:last-child td:nth-child(2) {
   border-radius: 0 0 20px 20px;
 }
@@ -463,7 +465,6 @@ td {
   width: 30%;
   position: sticky;
   top: 20px;
-  align-self: flex-start;
 }
 
 .summary-box {
@@ -472,7 +473,6 @@ td {
   border-radius: 25px;
   padding: 30px;
   text-align: center;
-  position: sticky;
   top: 20px;
 }
 
@@ -599,11 +599,6 @@ td {
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
-  transition: 0.3s;
-}
-
-.review-card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* --- Review Header --- */
@@ -748,7 +743,7 @@ td {
 /* --- Card Image --- */
 
 .product-card .img-box {
-  position: relative; /* عشان الـ badge يتحط صح جواه */
+  position: relative;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 15px;
