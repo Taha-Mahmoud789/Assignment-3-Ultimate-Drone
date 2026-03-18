@@ -196,7 +196,7 @@ td {
 
 /* --- Discount Badge --- */
 
-.discount {
+.discount-badge {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -216,12 +216,8 @@ td {
   background: linear-gradient(90deg, #7c5cff, #9f6cff);
   color: white;
   font-size: 13px;
+  font-weight: 600;
 }
-
-.badge img {
-  width: 22px;
-}
-
 /* --- Price --- */
 
 .new-price {
@@ -291,6 +287,7 @@ td {
   background-color: #f6f6fb;
   text-align: center;
 }
+
 /* --- Table Box --- */
 
 .table-box {
@@ -298,6 +295,9 @@ td {
   border-radius: 25px;
   border: 1px solid #a4a2a2;
   padding: 30px;
+}
+#compare .first-raw {
+  text-align: left;
 }
 
 /* --- Compare Table --- */
@@ -311,14 +311,15 @@ td {
 .compare-table th,
 .compare-table td {
   padding: 18px;
-  border-bottom: none;
   font-size: 16px;
 }
 
+.compare-table thead tr,
 .compare-table tbody tr {
   position: relative;
 }
 
+.compare-table thead tr::after,
 .compare-table tbody tr::after {
   content: "";
   position: absolute;
@@ -328,7 +329,6 @@ td {
   height: 1px;
   background-color: #c2c2c2;
 }
-
 /* --- Highlight Column (Our Product) --- */
 
 /* --- nth-child(2) Pseudo-class --- */
@@ -353,6 +353,7 @@ td {
 
 .compare-table tbody tr:last-child::after {
   display: none;
+  color: black;
 }
 
 /* --- Feature Cell --- */
@@ -396,6 +397,10 @@ td {
 .rating p {
   font-weight: 700;
   font-size: 18px;
+  color: #000;
+}
+.rating p:nth-child(1) {
+  text-align: left;
 }
 
 .price {
